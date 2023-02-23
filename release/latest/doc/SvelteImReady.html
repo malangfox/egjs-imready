@@ -301,6 +301,8 @@
     
         <li data-name="eg.ImReady.ImReadyOptions"><a href="eg.ImReady.html#.ImReadyOptions">ImReadyOptions</a></li>
     
+        <li data-name="eg.ImReady.ImReadyReactiveProps"><a href="eg.ImReady.html#.ImReadyReactiveProps">ImReadyReactiveProps</a></li>
+    
         <li data-name="eg.ImReady.OnError"><a href="eg.ImReady.html#.OnError">OnError</a></li>
     
         <li data-name="eg.ImReady.OnLoaderError"><a href="eg.ImReady.html#.OnLoaderError">OnLoaderError</a></li>
@@ -518,12 +520,12 @@
     <div class="nameContainer">
         <h4 class="name" id=".useImReady">
             
-            <span class="type-signature static">static</span>SvelteImReady.useImReady<span class="signature">(<span class="optional">props</span>)</span><span class="glyphicon glyphicon-circle-arrow-right"></span><span class="type-signature returnType">{<a href="SvelteImReady.html#.ImReadyValue">ImReadyValue</a>}</span>
+            <span class="type-signature static">static</span>SvelteImReady.useImReady<span class="signature">(<span class="optional">props</span>)</span><span class="glyphicon glyphicon-circle-arrow-right"></span><span class="type-signature returnType">{SvelteImReadyResult}</span>
         </h4>
     
         
         <div class="tag-source">
-            <a href="packages_svelte-imready_src_svelte-imready_useImReady.ts.html">useImReady.ts</a>, <a href="packages_svelte-imready_src_svelte-imready_useImReady.ts.html#line28">line 28</a>
+            <a href="packages_svelte-imready_src_svelte-imready_useImReady.ts.html">useImReady.ts</a>, <a href="packages_svelte-imready_src_svelte-imready_useImReady.ts.html#line30">line 30</a>
         </div>
         
     </div>
@@ -572,7 +574,7 @@
         <!-- parameter type -->
         
         <div>Type: 
-<span class="param-type">Partial&lt;<a href="SvelteImReady.html#.ImReadyProps">ImReadyProps</a>></span>
+<span class="param-type">Partial&lt;ImReadyReactiveProps></span>
 
 </div>
         
@@ -620,7 +622,7 @@
             <td class="type">
             
                     	
-                        <a href="SvelteImReady.html#.ImReadyValue">ImReadyValue</a>
+                        SvelteImReadyResult
                         
                         
                     
@@ -696,7 +698,7 @@ const {
     <div class="nameContainer">
         <h4 class="name" id=".usePreReady">
             
-            <span class="type-signature static">static</span>SvelteImReady.usePreReady<span class="signature">(<span class="optional">props</span>)</span><span class="glyphicon glyphicon-circle-arrow-right"></span><span class="type-signature returnType">{<a href="SvelteImReady.html#.ImReadyValue">ImReadyValue</a>}</span>
+            <span class="type-signature static">static</span>SvelteImReady.usePreReady<span class="signature">(<span class="optional">props</span>)</span><span class="glyphicon glyphicon-circle-arrow-right"></span><span class="type-signature returnType">{SvelteImReadyResult}</span>
         </h4>
     
         
@@ -712,12 +714,12 @@ const {
     
     
 	<div class="description en">
-		<p>Svelte hook to check if the images or videos are loaded. (only usePreReady and useError are true)</p>
+		<p>Svelte hook to check if the images or videos are loaded. (only usePreReady and useError are true) Since this is deprecated, use useImReady instead.</p>
 	</div>
 	
 	
 	<div class="description ko">
-		<p>이미지와 비디오들이 로드가 됐는지 체크하는 svelte hook.(usePreReady와 useError만 true)</p>
+		<p>이미지와 비디오들이 로드가 됐는지 체크하는 svelte hook.(usePreReady와 useError만 true) deprecated 되었으므로 useImReady를 이용해주세요.</p>
 	</div>
 	
 
@@ -750,7 +752,7 @@ const {
         <!-- parameter type -->
         
         <div>Type: 
-<span class="param-type">Partial&lt;<a href="SvelteImReady.html#.ImReadyProps">ImReadyProps</a>></span>
+<span class="param-type">Partial&lt;ImReadyReactiveProps></span>
 
 </div>
         
@@ -798,7 +800,7 @@ const {
             <td class="type">
             
                     	
-                        <a href="SvelteImReady.html#.ImReadyValue">ImReadyValue</a>
+                        SvelteImReadyResult
                         
                         
                     
@@ -844,6 +846,8 @@ const {
     
 
     
+        <dt class="important tag-deprecated">Deprecated</dt><dd class="yes-def tag-deprecated"><ul class="dummy"><li>Yes</li></ul></dd>
+    
 
     
 
@@ -871,7 +875,7 @@ const {
     <div class="nameContainer">
         <h4 class="name" id=".usePreReadyElement">
             
-            <span class="type-signature static">static</span>SvelteImReady.usePreReadyElement<span class="signature">(<span class="optional">props</span>)</span>
+            <span class="type-signature static">static</span>SvelteImReady.usePreReadyElement<span class="signature">(<span class="optional">props</span>)</span><span class="glyphicon glyphicon-circle-arrow-right"></span><span class="type-signature returnType">{SvelteImReadyResult}</span>
         </h4>
     
         
@@ -887,12 +891,12 @@ const {
     
     
 	<div class="description en">
-		<p>Svelte hook to check if the images or videos are loaded. (only <code>usePreReadyElement</code>, <code>usePreReady</code> and <code>useError</code> are true)</p>
+		<p>Svelte hook to check if the images or videos are loaded. (only <code>usePreReadyElement</code>, <code>usePreReady</code> and <code>useError</code> are true) Since this is deprecated, use useImReady instead.</p>
 	</div>
 	
 	
 	<div class="description ko">
-		<p>이미지와 비디오들이 로드가 됐는지 체크하는 svelte hook.(<code>usePreReadyElement</code>, <code>usePreReady</code>와 <code>useError</code>만 true)</p>
+		<p>이미지와 비디오들이 로드가 됐는지 체크하는 svelte hook.(<code>usePreReadyElement</code>, <code>usePreReady</code>와 <code>useError</code>만 true) deprecated 되었으므로 useImReady를 이용해주세요.</p>
 	</div>
 	
 
@@ -925,7 +929,7 @@ const {
         <!-- parameter type -->
         
         <div>Type: 
-<span class="param-type">Partial&lt;<a href="SvelteImReady.html#.ImReadyProps">ImReadyProps</a>></span>
+<span class="param-type">Partial&lt;ImReadyReactiveProps></span>
 
 </div>
         
@@ -953,6 +957,41 @@ const {
     
     
     
+    
+    <h5>Returns:</h5>
+    
+
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Type</th>
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+        <tr>
+            
+            <td class="type">
+            
+                    	
+                        SvelteImReadyResult
+                        
+                        
+                    
+            </td>
+            <td class="description last">
+                
+
+                
+            </td>
+        </tr>
+    
+    </tbody>
+</table>
+
     
     
     
@@ -985,6 +1024,8 @@ const {
     
 
     
+        <dt class="important tag-deprecated">Deprecated</dt><dd class="yes-def tag-deprecated"><ul class="dummy"><li>Yes</li></ul></dd>
+    
 
     
 
@@ -1012,7 +1053,7 @@ const {
     <div class="nameContainer">
         <h4 class="name" id=".useReady">
             
-            <span class="type-signature static">static</span>SvelteImReady.useReady<span class="signature">(<span class="optional">props</span>)</span>
+            <span class="type-signature static">static</span>SvelteImReady.useReady<span class="signature">(<span class="optional">props</span>)</span><span class="glyphicon glyphicon-circle-arrow-right"></span><span class="type-signature returnType">{SvelteImReadyResult}</span>
         </h4>
     
         
@@ -1028,12 +1069,12 @@ const {
     
     
 	<div class="description en">
-		<p>Svelte hook to check if the images or videos are loaded. (only <code>useReady</code> and <code>useError</code> are true)</p>
+		<p>Svelte hook to check if the images or videos are loaded. (only <code>useReady</code> and <code>useError</code> are true) Since this is deprecated, use useImReady instead.</p>
 	</div>
 	
 	
 	<div class="description ko">
-		<p>이미지와 비디오들이 로드가 됐는지 체크하는 react hook.(<code>useReady</code>와 <code>useError</code>만 true)</p>
+		<p>이미지와 비디오들이 로드가 됐는지 체크하는 react hook.(<code>useReady</code>와 <code>useError</code>만 true) deprecated 되었으므로 useImReady를 이용해주세요.</p>
 	</div>
 	
 
@@ -1066,7 +1107,7 @@ const {
         <!-- parameter type -->
         
         <div>Type: 
-<span class="param-type">Partial&lt;<a href="SvelteImReady.html#.ImReadyProps">ImReadyProps</a>></span>
+<span class="param-type">Partial&lt;ImReadyReactiveProps></span>
 
 </div>
         
@@ -1094,6 +1135,41 @@ const {
     
     
     
+    
+    <h5>Returns:</h5>
+    
+
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Type</th>
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+        <tr>
+            
+            <td class="type">
+            
+                    	
+                        SvelteImReadyResult
+                        
+                        
+                    
+            </td>
+            <td class="description last">
+                
+
+                
+            </td>
+        </tr>
+    
+    </tbody>
+</table>
+
     
     
     
@@ -1125,6 +1201,8 @@ const {
     
 
     
+        <dt class="important tag-deprecated">Deprecated</dt><dd class="yes-def tag-deprecated"><ul class="dummy"><li>Yes</li></ul></dd>
+    
 
     
 
@@ -1152,12 +1230,12 @@ const {
     <div class="nameContainer">
         <h4 class="name" id=".useReadyElement">
             
-            <span class="type-signature static">static</span>SvelteImReady.useReadyElement<span class="signature">(<span class="optional">props</span>)</span>
+            <span class="type-signature static">static</span>SvelteImReady.useReadyElement<span class="signature">(<span class="optional">props</span>)</span><span class="glyphicon glyphicon-circle-arrow-right"></span><span class="type-signature returnType">{SvelteImReadyResult}</span>
         </h4>
     
         
         <div class="tag-source">
-            <a href="packages_svelte-imready_src_svelte-imready_useReadyElement.ts.html">useReadyElement.ts</a>, <a href="packages_svelte-imready_src_svelte-imready_useReadyElement.ts.html#line25">line 25</a>
+            <a href="packages_svelte-imready_src_svelte-imready_useReadyElement.ts.html">useReadyElement.ts</a>, <a href="packages_svelte-imready_src_svelte-imready_useReadyElement.ts.html#line26">line 26</a>
         </div>
         
     </div>
@@ -1168,12 +1246,12 @@ const {
     
     
 	<div class="description en">
-		<p>Svelte hook to check if the images or videos are loaded. (only <code>useReadyElement</code>, <code>useReady</code> and <code>useError</code> are true)</p>
+		<p>Svelte hook to check if the images or videos are loaded. (only <code>useReadyElement</code>, <code>useReady</code> and <code>useError</code> are true) Since this is deprecated, use useImReady instead.</p>
 	</div>
 	
 	
 	<div class="description ko">
-		<p>이미지와 비디오들이 로드가 됐는지 체크하는 svelte hook.(<code>useReadyElement</code>, <code>useReady</code>와 <code>useError</code>만 true)</p>
+		<p>이미지와 비디오들이 로드가 됐는지 체크하는 svelte hook.(<code>useReadyElement</code>, <code>useReady</code>와 <code>useError</code>만 true) deprecated 되었으므로 useImReady를 이용해주세요.</p>
 	</div>
 	
 
@@ -1206,7 +1284,7 @@ const {
         <!-- parameter type -->
         
         <div>Type: 
-<span class="param-type">Partial&lt;<a href="SvelteImReady.html#.ImReadyProps">ImReadyProps</a>></span>
+<span class="param-type">Partial&lt;ImReadyReactiveProps></span>
 
 </div>
         
@@ -1234,6 +1312,41 @@ const {
     
     
     
+    
+    <h5>Returns:</h5>
+    
+
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Type</th>
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+        <tr>
+            
+            <td class="type">
+            
+                    	
+                        SvelteImReadyResult
+                        
+                        
+                    
+            </td>
+            <td class="description last">
+                
+
+                
+            </td>
+        </tr>
+    
+    </tbody>
+</table>
+
     
     
     
@@ -1266,6 +1379,8 @@ const {
 
     
 
+    
+        <dt class="important tag-deprecated">Deprecated</dt><dd class="yes-def tag-deprecated"><ul class="dummy"><li>Yes</li></ul></dd>
     
 
     
@@ -1412,9 +1527,6 @@ const {
             
             <td class="description last">
                 
-                <div class="en"><p>Find the children of the element registered with the <code>register</code> function through the selector. (default: &quot;&quot;) </p></div>
-                <div class="ko"><p>selector를 통해 <code>register</code> 함수로 등록한 엘리먼트의 children을를 찾는다. (default: &quot;&quot;)</p></div>
-                
 
                 </td>
         </tr>
@@ -1440,9 +1552,6 @@ const {
             
             
             <td class="description last">
-                
-                <div class="en"><p>Whether to use the <code>readyElement</code> event. You can use the <code>readyCount</code>, <code>isPreReadyOver</code> value. (default: true) </p></div>
-                <div class="ko"><p><code>readyElement</code> 이벤트를 사용할지 여부. <code>readyCount</code>, <code>isPreReadyOver</code> 값을 사용할 수 있다. (default: true)</p></div>
                 
 
                 </td>
@@ -1470,9 +1579,6 @@ const {
             
             <td class="description last">
                 
-                <div class="en"><p>Whether to use the <code>preReadyElement</code> event. You can use the <code>preReadyCount</code> value. (default: true) </p></div>
-                <div class="ko"><p><code>preReadyElement</code> 이벤트를 사용할지 여부. <code>preReadyCount</code> 값을 사용할 수 있다. (default: true)</p></div>
-                
 
                 </td>
         </tr>
@@ -1498,9 +1604,6 @@ const {
             
             
             <td class="description last">
-                
-                <div class="en"><p>Whether to use the <code>ready</code> event. You can use the <code>isReady</code> value. (default: true) </p></div>
-                <div class="ko"><p><code>ready</code> 이벤트를 사용할지 여부. <code>isReady</code> 값을 사용할 수 있다. (default: true)</p></div>
                 
 
                 </td>
@@ -1528,9 +1631,6 @@ const {
             
             <td class="description last">
                 
-                <div class="en"><p>Whether to use the <code>preReady</code> event. You can use the <code>isPreReady</code> value. (default: true) </p></div>
-                <div class="ko"><p><code>preReady</code> 이벤트를 사용할지 여부. <code>isPreReady</code> 값을 사용할 수 있다. (default: true)</p></div>
-                
 
                 </td>
         </tr>
@@ -1556,9 +1656,6 @@ const {
             
             
             <td class="description last">
-                
-                <div class="en"><p>Whether to use the <code>error</code> event. You can use the <code>hasError</code>, <code>errorCount</code>, <code>totalErrorCount</code> value. (default: true) </p></div>
-                <div class="ko"><p><code>error</code> 이벤트를 사용할지 여부. <code>hasError</code>, <code>errorCount</code>, <code>totalErrorCount</code> 값을 사용할 수 있다. (default: true)</p></div>
                 
 
                 </td>
@@ -1983,7 +2080,7 @@ const {
         
 
         <footer>
-            Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 0.3.8</a> on Fri Nov 25 2022 13:48:37 GMT+0900 (대한민국 표준시)
+            Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 0.3.12</a> on Thu Feb 23 2023 17:48:12 GMT+0900 (대한민국 표준시)
         </footer>
     </div>
 </div>
