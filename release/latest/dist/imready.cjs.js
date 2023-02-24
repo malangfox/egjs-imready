@@ -4,7 +4,7 @@ name: @egjs/imready
 license: MIT
 author: NAVER Corp.
 repository: https://github.com/naver/egjs-imready
-version: 1.3.1
+version: 1.4.1
 */
 'use strict';
 
